@@ -5,80 +5,32 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Mi Primera Comunión · Francisco</title>
 
-  <!-- Open Graph / WhatsApp -->
+<!-- Open Graph para WhatsApp -->
 <meta property="og:type" content="website">
 <meta property="og:title" content="Mi Primera Comunión · Francisco">
 <meta property="og:description" content="Hola, soy Francisco y por fin llega mi Primera Comunión. Pulsa para abrir la invitación.">
 <meta property="og:image" content="https://sitonj.github.io/COMUNI-N-FRANCISCO/sobre.png">
- <meta property="og:image:secure_url" content="https://sitonj.github.io/COMUNI-N-FRANCISCO/sobre.png">
-<meta property="og:image:type" content="image/png">
-
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:url" content="https://sitonj.github.io/COMUNI-N-FRANCISCO/">
 
 <style>
-  body{margin:0;background:#eef0f4;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;}
-  .wrap{max-width:520px;margin:auto;padding:16px;}
-  .card{position:relative;border-radius:20px;overflow:hidden;box-shadow:0 14px 40px rgba(0,0,0,.18);background:#fff;}
-  .card img{width:100%;display:block;}
-
-  /* Zona clicable EXACTA sobre el botón que YA está dibujado en la imagen */
- .hotspot{
-  position:absolute;
-  right:3%;
-  bottom:2%;
-  width:26%;
-  height:22%;
-  cursor:pointer;
-  background:transparent;
-}
-
-  .modal.open{display:flex}
-  .modalContent{
-    position:relative;
-    max-width:520px;width:100%;
-    border-radius:20px;overflow:hidden;
-    box-shadow:0 20px 60px rgba(0,0,0,.35);
-    animation:zoom .25s ease;
-    background:#fff;
-  }
-  @keyframes zoom{from{transform:scale(.95);opacity:0}to{transform:scale(1);opacity:1}}
-
-  .close{
-    position:absolute;top:12px;right:12px;
-    width:38px;height:38px;border-radius:50%;
-    border:none;background:rgba(255,255,255,.92);
-    color:#2f3e4e;font-size:22px;
-    display:grid;place-items:center;
-    cursor:pointer;
-    box-shadow:0 8px 22px rgba(0,0,0,.25);
-  }
+body{margin:0;background:#eef0f4;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;}
+.wrap{max-width:520px;margin:auto;padding:16px;}
+.card{border-radius:20px;overflow:hidden;box-shadow:0 14px 40px rgba(0,0,0,.18);background:#fff;}
+.card img{width:100%;display:block;}
+a{display:block}
 </style>
 </head>
 <body>
 
 <div class="wrap">
-  <div class="card">
-    <img src="sobre.png" alt="Sobre invitación">
-
-    <div class="hotspot" id="open" aria-label="Abrir información"></div>
-  </div>
+  <a href="info.html">
+    <div class="card">
+      <img src="sobre.png" alt="Abrir invitación">
+    </div>
+  </a>
 </div>
-
-<div class="modal" id="modal">
-  <div class="modalContent">
-    <button class="close" id="close" aria-label="Cerrar">×</button>
-    <img src="info.png" alt="Información" style="width:100%;display:block">
-  </div>
-</div>
-
-<script>
-const modal=document.getElementById("modal");
-document.getElementById("open").onclick=()=>modal.classList.add("open");
-document.getElementById("close").onclick=()=>modal.classList.remove("open");
-modal.onclick=e=>{if(e.target===modal)modal.classList.remove("open");}
-</script>
 
 </body>
 </html>
