@@ -1,53 +1,48 @@
 <!doctype html>
 <html lang="es">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Mi Primera Comunión · Francisco</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Mi Primera Comunión · Francisco</title>
 
-<!-- Open Graph para WhatsApp -->
-<meta property="og:type" content="website">
-<meta property="og:title" content="Mi Primera Comunión · Francisco">
-<meta property="og:description" content="Hola, soy Francisco y por fin llega mi Primera Comunión. Pulsa para abrir la invitación.">
-<meta property="og:image" content="https://sitonj.github.io/COMUNI-N-FRANCISCO/sobre.png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:url" content="https://sitonj.github.io/COMUNI-N-FRANCISCO/">
+  <!-- Open Graph para WhatsApp -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Mi Primera Comunión · Francisco">
+  <meta property="og:description" content="Hola, soy Francisco y por fin llega mi Primera Comunión. Pulsa para abrir la invitación.">
+  <meta property="og:image" content="https://sitonj.github.io/COMUNI-N-FRANCISCO/sobre.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:url" content="https://sitonj.github.io/COMUNI-N-FRANCISCO/">
 
-<style>
-body{margin:0;background:#eef0f4;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;}
-.wrap{max-width:520px;margin:auto;padding:16px;}
-.card{
-  position:relative;              /* 👈 ESTO ES CLAVE */
-  border-radius:20px;
-  overflow:hidden;
-  box-shadow:0 14px 40px rgba(0,0,0,.18);
-  background:#fff;
-}
-.card img{width:100%;display:block;}
+  <style>
+    body{margin:0;background:#eef0f4;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;}
+    .wrap{max-width:520px;margin:auto;padding:16px;}
+    .card{
+      position:relative;
+      border-radius:20px;
+      overflow:hidden;
+      box-shadow:0 14px 40px rgba(0,0,0,.18);
+      background:#fff;
+    }
+    .card img{width:100%;display:block;}
+    .hotspot{
+      position:absolute;
+      inset:0;
+      display:block;
+      cursor:pointer;
+      background:transparent;
+      z-index:10;
+    }
+  </style>
+</head>
 
-.hotspot{
-  position:absolute;
-  inset:0;                        /* 👈 ocupa TODO el sobre */
-  display:block;
-  cursor:pointer;
-  background:transparent;
-  z-index:10;                     /* 👈 por encima de la imagen */
-}
-
-
-<div class="wrap">
-  <div class="card">
-    <img src="sobre.png" alt="Sobre invitación">
-    <a class="hotspot" href="portada.html" aria-label="Ver invitación"></a>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <img src="sobre.png" alt="Sobre invitación">
+      <a class="hotspot" href="portada.html" aria-label="Ver invitación"></a>
+    </div>
   </div>
-</div>
-
-
-
-  </div>
-</div>
-
-
 </body>
 </html>
+
