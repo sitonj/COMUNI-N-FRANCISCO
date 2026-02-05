@@ -3,75 +3,38 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-
   <title>Mi Primera Comunión · Francisco</title>
 
   <!-- Open Graph para WhatsApp -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Mi Primera Comunión · Francisco">
-
-  <!-- Descripción vacía para que NO muestre texto largo -->
- <meta property="og:type" content="website">
-<meta property="og:title" content="Mi Primera Comunión · Francisco">
-<meta property="og:description" content="">
-<meta name="description" content="">
-<meta property="og:image" content="https://sitonj.github.io/COMUNI-N-FRANCISCO/sobre.png?v=4">
-
-
-  <!-- Imagen del sobre -->
-  <meta property="og:image" content="https://sitonj.github.io/COMUNI-N-FRANCISCO/sobre.png?v=3">
-
+  <meta property="og:description" content=" ">
+  <meta name="description" content=" ">
+  <meta property="og:image" content="https://sitonj.github.io/COMUNI-N-FRANCISCO/sobre.png?v=999">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
 
-  <!-- IMPORTANTE: NO ponemos og:url -->
+  <style>
+    body{ margin:0; background:#eef0f4; font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial; }
 
-<style>
-  body{
-    margin:0;
-    background:#eef0f4;
-    font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;
-  }
+    /* 👇 SIN MÁRGENES: ocupa toda la pantalla */
+    .wrap{ width:100vw; margin:0; padding:0; }
 
-  /* Sin márgenes: ocupa casi toda la pantalla */
-  .wrap{
-    max-width:100vw;
-    margin:0;
-    padding:0;              /* 👈 esto es lo que más “agranda” */
-  }
+    .card{ position:relative; border-radius:0; overflow:hidden; background:#fff; box-shadow:none; }
 
-  .card{
-    position:relative;
-    border-radius:0;        /* opcional: si quieres que quede más “a pantalla” */
-    overflow:hidden;
-    box-shadow:none;        /* opcional: quita sombra para que parezca full screen */
-    background:#fff;
-  }
+    /* 👇 el sobre a pantalla completa */
+    .card img{ width:100vw; height:auto; display:block; }
 
-  .card img{
-    width:100vw;            /* 👈 ocupa ancho de pantalla */
-    max-width:100%;
-    height:auto;
-    display:block;
-  }
-
-  .hotspot{
-    position:absolute;
-    inset:0;
-    display:block;
-    cursor:pointer;
-    z-index:10;
-  }
-</style>
+    /* 👇 todo el sobre clicable */
+    .hotspot{ position:absolute; inset:0; display:block; z-index:10; }
+  </style>
 </head>
 
 <body>
   <div class="wrap">
     <div class="card">
-      <img src="sobre.png?v=3" alt="Sobre invitación">
-
-      <!-- TODO el sobre es clicable -->
-      <a class="hotspot" href="portada.html?v=2" aria-label="Ver invitación"></a>
+      <img src="sobre.png?v=999" alt="Sobre invitación">
+      <a class="hotspot" href="portada.html?v=999" aria-label="Ver invitación"></a>
     </div>
   </div>
 </body>
