@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
+
   <title>Mi Primera Comunión · Francisco</title>
 
   <!-- Open Graph para WhatsApp -->
@@ -15,29 +16,60 @@
   <meta property="og:image:height" content="630">
 
   <style>
-    body{ margin:0; background:#eef0f4; font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial; }
+    /* Quitar márgenes y hacer que la página use todo el alto */
+    html, body{
+      height:100%;
+      margin:0;
+      background:#eef0f4;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;
+    }
 
-    /* 👇 SIN MÁRGENES: ocupa toda la pantalla */
-    .wrap{ width:100vw; margin:0; padding:0; }
+    /* Contenedor a pantalla completa */
+    .wrap{
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:0; /* 👈 SIN padding para que crezca */
+    }
 
-    .card{ position:relative; border-radius:0; overflow:hidden; background:#fff; box-shadow:none; }
+    /* La “tarjeta” ocupa casi todo el ancho de la pantalla */
+    .card{
+      position:relative;
+      width:min(520px, 100vw); /* 👈 máximo 520px, si no, todo el ancho */
+      margin:0;
+      border-radius:0;         /* 👈 sin bordes redondeados = más grande */
+      overflow:hidden;
+      box-shadow:none;         /* 👈 sin sombra = más limpio y grande */
+      background:transparent;
+    }
 
-    /* 👇 el sobre a pantalla completa */
-    .card img{ width:100vw; height:auto; display:block; }
+    /* La imagen ocupa todo el ancho */
+    .card img{
+      width:100%;
+      height:auto;
+      display:block;
+    }
 
-    /* 👇 todo el sobre clicable */
-    .hotspot{ position:absolute; inset:0; display:block; z-index:10; }
+    /* Todo el sobre clicable */
+    .hotspot{
+      position:absolute;
+      inset:0;
+      display:block;
+      cursor:pointer;
+      z-index:10;
+      background:transparent;
+    }
   </style>
 </head>
 
 <body>
   <div class="wrap">
     <div class="card">
-      <img src="sobre.png?v=999" alt="Sobre invitación">
-      <a class="hotspot" href="portada.html?v=999" aria-label="Ver invitación"></a>
+      <img src="sobre.png" alt="Sobre invitación">
+      <a class="hotspot" href="portada.html?v=2" aria-label="Ver invitación"></a>
     </div>
   </div>
 </body>
 </html>
-
 
