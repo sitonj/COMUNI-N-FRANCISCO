@@ -3,20 +3,35 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
+
   <title>Mi Primera Comunión · Francisco</title>
 
-  <!-- Open Graph / WhatsApp -->
+  <!-- Open Graph para WhatsApp -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Mi Primera Comunión · Francisco">
-  <meta property="og:description" content="Hola, soy Francisco y por fin llega mi Primera Comunión. Pulsa para abrir la invitación.">
+
+  <!-- Descripción vacía para que NO muestre texto largo -->
+  <meta property="og:description" content=" ">
+  <meta name="description" content=" ">
+
+  <!-- Imagen del sobre -->
   <meta property="og:image" content="https://sitonj.github.io/COMUNI-N-FRANCISCO/sobre.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:url" content="https://sitonj.github.io/COMUNI-N-FRANCISCO/">
+
+  <!-- IMPORTANTE: NO ponemos og:url -->
 
   <style>
-    body{margin:0;background:#eef0f4;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;}
-    .wrap{max-width:520px;margin:auto;padding:16px;}
+    body{
+      margin:0;
+      background:#eef0f4;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;
+    }
+    .wrap{
+      max-width:520px;
+      margin:auto;
+      padding:16px;
+    }
     .card{
       position:relative;
       border-radius:20px;
@@ -24,7 +39,10 @@
       box-shadow:0 14px 40px rgba(0,0,0,.18);
       background:#fff;
     }
-    .card img{width:100%;display:block;}
+    .card img{
+      width:100%;
+      display:block;
+    }
     .hotspot{
       position:absolute;
       inset:0;
@@ -33,31 +51,17 @@
       z-index:10;
     }
   </style>
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-
-<title>Mi Primera Comunión · Francisco</title>
-
-<!-- Open Graph para WhatsApp -->
-<meta property="og:type" content="website">
-<meta property="og:title" content="Mi Primera Comunión · Francisco">
-<meta property="og:description" content="">
-<meta property="og:image" content="https://sitonj.github.io/COMUNI-N-FRANCISCO/sobre.png">
-<meta property="og:url" content="https://sitonj.github.io/COMUNI-N-FRANCISCO/">
 </head>
-
 
 <body>
   <div class="wrap">
     <div class="card">
       <img src="sobre.png" alt="Sobre invitación">
       <!-- TODO el sobre es clicable -->
-      <a class="hotspot" href="portada.html?v=1" aria-label="Ver invitación"></a>
-
-
+      <a class="hotspot" href="portada.html?v=2" aria-label="Ver invitación"></a>
     </div>
   </div>
 </body>
 </html>
+
 
