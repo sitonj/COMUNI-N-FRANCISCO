@@ -26,36 +26,43 @@
 
   <!-- IMPORTANTE: NO ponemos og:url -->
 
-  <style>
-    body{
-      margin:0;
-      background:#eef0f4;
-      font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;
-    }
-   ..wrap{
-  max-width:100%;
-  margin:auto;
-  padding:8px;
-}
-    .card{
-      position:relative;
-      border-radius:20px;
-      overflow:hidden;
-      box-shadow:0 14px 40px rgba(0,0,0,.18);
-      background:#fff;
-    }
-    .card img{
-      width:100%;
-      display:block;
-    }
-    .hotspot{
-      position:absolute;
-      inset:0;
-      display:block;
-      cursor:pointer;
-      z-index:10;
-    }
-  </style>
+<style>
+  body{
+    margin:0;
+    background:#eef0f4;
+    font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;
+  }
+
+  /* Sin márgenes: ocupa casi toda la pantalla */
+  .wrap{
+    max-width:100vw;
+    margin:0;
+    padding:0;              /* 👈 esto es lo que más “agranda” */
+  }
+
+  .card{
+    position:relative;
+    border-radius:0;        /* opcional: si quieres que quede más “a pantalla” */
+    overflow:hidden;
+    box-shadow:none;        /* opcional: quita sombra para que parezca full screen */
+    background:#fff;
+  }
+
+  .card img{
+    width:100vw;            /* 👈 ocupa ancho de pantalla */
+    max-width:100%;
+    height:auto;
+    display:block;
+  }
+
+  .hotspot{
+    position:absolute;
+    inset:0;
+    display:block;
+    cursor:pointer;
+    z-index:10;
+  }
+</style>
 </head>
 
 <body>
